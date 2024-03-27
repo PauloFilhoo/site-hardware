@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardshows</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Hardshows</h1>
+            <p>Os preços mais justos do mundo.</p>
+        </div>
+        <nav class="shortcuts">
+            <a href="index.html">Principal</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <div class="search-list">
+                <label for="search-label">Pesquisar por</label>
+                <select name="principals" id="principals" onchange="Escolhido()">
+                    <option value="" selected disabled hidden>Escolha</option>
+                    <option value="graphic-card">Placa de vídeo</option>
+                    <option value="motherboard">Placa mãe</option>
+                    <option value="processor">Processador</option>
+                    <option value="ram">Memoria ram</option>
+                    <option value="power">Fonte de alimentação</option>
+                    <option value="gabinete">Gabinete</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="mousepad">Mousepad</option>
+                    <option value="keyboard">Teclado</option>
+                    <option value="headset">Headset</option>
+                </select>
+            </div>
+            <label for="results"></label>
+        </div>
+        <div class="container">
+            <div class="box-container">
+                <div class="box-image">
+                    <img src="images/rtx_teste.png" alt="placeholdrr">
+                </div>
+                <div class="box-title">
+                    <h1>RTX 3080</h1>
+                </div>
+                <label for="Price">
+                    <p>R$:6.400,99</p>
+                </label>
+                <button>
+                    Adicionar ao carrinho
+                </button>
+            </div>        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

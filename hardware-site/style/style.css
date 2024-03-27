@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1.4em;
+    font-family: Roboto;
+}
+
+img {
+    width: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition-duration: .25s;
+}
+
+a:hover {
+    color: blueviolet;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition-duration: .25s;
+    transform: translateY(-5px);
+}
+
+.search-container {
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.search-container select {
+    width: 350px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    height: 5%;
+    max-width: 300px;
+    gap: 5px;
+}
+
+.box-container button {
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    transition-duration: .25s;
+}
+
+.box-container button:hover {
+    background-color: gray;
+    transform: translateY(-5px);
+    transition-duration: .25s;
+    cursor: pointer;
+}
