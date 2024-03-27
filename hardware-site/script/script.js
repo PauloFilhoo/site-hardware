@@ -1,19 +1,7 @@
+let search_result = document.getElementById('search-result-label')
 
-
-function Escolhido()
+function Choosed()
 {
-    let escolhido = document.getElementById("principals").value
-
-    if (escolhido == 'graphic-card')
-    {
-        window.location.replace("index.html")
-    } 
-    if (escolhido == 'motherboard')
-    {
-        window.location.replace("motherboard.html")
-    } 
-    if (escolhido == 'processor')
-    {
-        window.location.replace("processor.html")
-    }
+    let search = document.getElementById("principals").value
+    search_result.innerHTML = `Resultados por: ${search}`
 }

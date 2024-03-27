@@ -6,7 +6,7 @@
 }
 
 body {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: Roboto;
 }
 
@@ -64,7 +64,7 @@ a:hover {
 }
 
 main {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -72,24 +72,52 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: row;
     justify-content: flex-start;
     padding-top: 50px;
-    gap: 10px;
+    gap: 15px;
+}
+
+@media (max-width: 800px)
+{
+    .container {
+        flex-direction: column;
+    }
 }
 
 .box-container {
     display: flex;
     flex-direction: column;
-    height: 5%;
-    max-width: 300px;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 450px;
+    max-width: 280px;
+    border: 1px rgb(54, 54, 54) solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.box-image {
+    max-width: 100%;
+}
+
+.box-title {
+    font-size: .6em;
+}
+
+.price {
+    color: blueviolet;
 }
 
 .box-container button {
     height: 70px;
+    max-width: 280px;
     border-radius: 10px;
     border: none;
     font-size: 1em;
+    font-weight: bold;
     transition-duration: .25s;
 }
 
@@ -98,4 +126,8 @@ main {
     transform: translateY(-5px);
     transition-duration: .25s;
     cursor: pointer;
+}
+
+.box-container label {
+    font-size: 1.2em;
 }

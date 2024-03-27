@@ -22,7 +22,7 @@
         <div class="search-container">
             <div class="search-list">
                 <label for="search-label">Pesquisar por</label>
-                <select name="principals" id="principals" onchange="Escolhido()">
+                <select name="principals" id="principals" onchange="Choosed()">
                     <option value="" selected disabled hidden>Escolha</option>
                     <option value="graphic-card">Placa de vídeo</option>
                     <option value="motherboard">Placa mãe</option>
@@ -36,6 +36,11 @@
                     <option value="headset">Headset</option>
                 </select>
             </div>
+            <div class="search-results">
+                <p id="search-result-label">
+                    Resultados por: 
+                </p>
+            </div>
         </div>
         <div class="container">
             <div class="box-container">
@@ -43,15 +48,15 @@
                     <img src="images/rtx_teste.png" alt="placeholdrr">
                 </div>
                 <div class="box-title">
-                    <h1>RTX 3080</h1>
+                    <h1>RTX 3080 8GB 1600mhz 32gb de ram</h1>
                 </div>
-                <label for="Price">
+                <label for="price" class="price">
                     <p>R$:2.399,99</p>
                 </label>
                 <button>
                     Adicionar ao carrinho
                 </button>
-            </div>        
+            </div>         
         </div>
     </main>
     <script src="script/script.js"></script>
